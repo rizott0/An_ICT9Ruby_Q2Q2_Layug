@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Navigation Bar</title>
+    <!-- SW2 (/w navbar) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+  
+    body{
+      background-image: url(bg.jpg);
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .container{
+      background-color: darkgray;
+      background: rgba(0,0,0,0.5);
+    }
+
+    .navbar-custom{
+      background: rgba(0,0,0,0.5);
+    }
+
+    .navbar-custom, .navbar-brand, .navbar-custom, .nav-link {
+      color: #fff;
+
+    .navbar-custom .nav-link: {
+      color: white ; 
+        }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="https://obmontessori.edu.ph/">OBMC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="https://obmontessori.edu.ph/">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.google.com/maps/dir/15.136978,120.5981401/4HPW%2BWRH,+MacArthur+Hwy,+Angeles,+2009+Pampanga/@15.1370595,120.5951036,17z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x3396f237c7d7ec39:0xa3cae61a3f0a87ea!2m2!1d120.5971115!2d15.1373131?entry=ttu&g_ep=EgoyMDI0MTIwMi4wIKXMDSoASAFQAw%3D%3D">LOCATE</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://obmontessori.edu.ph/contact-us">CONTACT</a>
+        </li>        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h1 class="mb-5 text-center">Robotics Club Registration Form</h1>
+  <form>
+    <div class="row">
+      <div class="col-md-6">
+        <label for="name1">Name</label>
+        <input type="text" class="form-control" id="name1" placeholder="Type your FULL NAME here.">
+      </div>
+      <div class="col-md-6">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Type your EMAIL here.">
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <label for="contact">Contact Number</label>
+        <input type="text" class="form-control" id="contact" placeholder="Type your CONTACT NUMBER here.">
+      </div>
+      <div class="col-md-6">
+        <label for="age">Age</label>
+        <input type="number" class="form-control" id="age" placeholder="Type your AGE here.">
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <p>Preferred Robotic Topics</p>
+        <input type="checkbox" id="programming">
+        <label for="programming">Programming</label>
+        <br>
+        <input type="checkbox" id="electronics">
+        <label for="electronics">Electronics</label>
+        <br>
+        <input type="checkbox" id="design">
+        <label for="design">Mechanical Design</label>
+        <br>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <p>Robotics Experience Level</p>
+        <input type="radio" id="beginner">
+        <label for="beginner">Beginner</label>
+        <br>
+        <input type="radio" id="intermediate">
+        <label for="intermediate">Intermediate</label>
+        <br>
+        <input type="radio" id="Advanced">
+        <label for="advanced">Advanced</label>
+        <br>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <label for="project">Preferred Robotics Project</label>
+
+        <select class="form-control" id="project">
+          <option id="arm">Robotic arm</option>
+          <option id="face">Facial recognition security robot</option>
+          <option id="bluetooth">Bluetooth robotics</option>
+          <option id="gesture">Gesture control robot</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-12">
+        <label for="statement">Statement of Interest</label>
+        <textarea class="form-control" id="statement" placeholder="Type your STATEMENT here." rows="5"></textarea>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-2" >
+        <button type="primary" class="form-control" id="submit" style="background-color: darkturquoise; color: white;">Submit</button>
+      </div>
+      <div class="col-md-2">
+        <button type="secondary" class="form-control" id="reset" style="background-color: darkgray; color: white;">Reset</button>
+      </div>
+    </div>
+
+    <br>
+    <br>
+
+    <h5 class="text-center"><i>Submitted by Riz Layug</i></h5>
+
+  </form>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
